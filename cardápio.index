@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <style>
+        /* Reset e estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #add8e6;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: #ffd700;
+            color: white;
+            padding: 20px 10px;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        /* Estilo dos títulos das seções */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+            font-size: 28px;
+            color:#ffa500;
+        }
+
+        /* Container dos itens */
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Card dos itens */
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.03);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-item h2 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #ffd700;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            padding: 0 10px;
+        }
+
+        .price {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> lanchonete "Amore de verão" </h1>
+	<h1>          Cardápio  </h1>
+    <p> ❤️Sabores que você vai amar!🏖️</p>
+</header>
+
+<!-- Seção de Pratos -->
+<h2 class="section-title">Pratos Principais</h2>
+<section class="menu-container">
+  <div class="menu-item">
+        <h2> 🥚Coxinha</h2>
+        <p> Leve e macia, feita com farinha de trigo e caldo de galinha,Frango desfiado e refogado, com temperos. A adição de requeijão cremoso  .</p>
+        <span class="price"> R$ 5,50</span>
+    </div>
+	
+   <div class="menu-item">
+        <h2>🫓Pão de queijo</h2>
+        <p>é um tipo de pãozinho salgado assado redondo feito a base de polvilho azedo ou doce e queijos .</p>
+        <span class="price"> R$ 3,00</span>
+    </div> 
+	
+   <div class="menu-item">
+        <h2>🥧Empadinha</h2>
+        <p>feito com uma massa que envolve um recheio, geralmente de carne, frango, palmito .</p>
+        <span class="price">P R$ 35,00, M R$ 45,00 G R$ 55,00</span>
+    </div>
+	
+    <div class="menu-item">
+        <h2>🍕Pizza de Calabresa</h2>
+        <p> A combinação de sabores marcantes, como o defumado da calabresa e o suave do queijo, juntamente com a crocância da massa e o toque da cebola,causa uma explosão de sabores.</p>
+        <span class="price"> P R$ 35,00, M R$ 45,00 G R$ 55,00</span>
+    </div>
+
+    <div class="menu-item">
+        <h2>🍕Pizza quatro queijos</h2>
+        <p>Esta pizza maravilhosa inclui: uma mistura de queijos como mussarela, parmesão, provolone e gorgonzola,uma verdadeira maravilha.</p>
+        <span class="price">P R$ 35,00, M R$ 45,00 G R$ 55,00</span>
+    </div>
+
+    <div class="menu-item">
+        <h2>🍕Pizza amoda</h2>
+        <p>combina-se presunto, ovo, frango, milho e queijos,e outras delícias .</p>
+        <span class="price">P R$ 35,00, M R$ 45,00 G R$ 55,00</span>
+    </div>
+	
+	<div class="menu-item">
+        <h2> 🍔Hamburguer queijo e bacon</h2>
+        <p>Pão brioche, hambúrguer 180g de carne bovina, queijo cheddar, queijo prato, bacon crocante, alface e tomate, maionese de alho, molho barbecue .</p>
+        <span class="price"> R$ 30,00 </span>
+    </div>
+	
+	<div class="menu-item">
+        <h2> 🍔Hamburguer vegetariano </h2>
+        <p>Pão integral ou sem glúten, hambúrguer de grão-de-bico e quinoa, abacate fatiado, queijo vegano, maionese dijon, rúcula e cebola roxa grelhada .</p>
+        <span class="price"> R$ 25,00</span>
+    </div>
+	
+	<div class="menu-item">
+        <h2>🍔Hamburguer de picanha </h2>
+        <p>Pão brioche, hambúrguer 180g de picanha suculenta, molho de cebola caramelizada, queijo prato derretido, alface e tomate .</p>
+        <span class="price"> R$ 45,00</span>
+    </div>
+	
+	
+	 
+</section>
+
+<!-- Seção de Sobremesas -->
+<h2 class="section-title">Sobremesas</h2>
+<section class="menu-container">
+    <div class="menu-item">
+	<div class="menu-item">
+        <h2>🍨Sorvetes 2 bolas</h2>
+        <p>Escolha suas combinações favoritas e deliciosas .</p>
+        <span class="price">R$ 8,00</span>
+    </div
+	
+	<div class="menu-item">
+        <h2>🍰Bolo de Chocolate</h2>
+        <p>Cobertura cremosa e massa fofinhamistura de pasta de cacau em pó, manteiga de cacau e açúcar,chocolate derretido ou em pó, ou ainda cacau em pó em sua confecção .</p>
+        <span class="price"> fatia R$ 10,00</span>
+    </div>
+	
+    <div class="menu-item">
+        <h2>🍮Pudim de Leite</h2>
+        <p>feita com leite, ovos e açúcar, cozida em banho-maria e caramelizada por cima.</p>
+        <span class="price"> fatia R$ 12,00</span>
+    </div>
+	
+	<div class="menu-item">
+        <h2>🧁Torta de morango</h2>
+        <p> geleia de morango com a crocância de uma farofa de biscoitos .</p>
+        <span class="price"> fatia R$ 13,00</span>
+    </div>
+	
+	<div class="menu-item">
+        <h2>🥮Pavê</h2>
+        <p>orta gelada que tem como base biscoitos do tipo champanhe ou maizena inteiros ou uma massa de bolo suave embebidos em sucos, licores ou caldas e um creme entre as camadas .</p>
+        <span class="price"> fatia R$ 14,00</span>
+    </div>
+	
+	<div class="menu-item">
+        <h2>Brownie</h2>
+        <p>feito com ingredientes simples como açúcar, chocolate, manteiga, farinha e ovos, .</p>
+        <span class="price">fatia G R$ 15,00</span>
+    </div> 
+	
+	<div class="menu-item">
+        <h2> 🥗Salada de frutas </h2>
+        <p>é uma combinação de frutas picadas, frescas e variadas, misturadas numa tigela e temperadas com um líquido, como suco de laranja ou leite condensado.</p>
+        <span class="price"> R$ 15,00</span>
+    </div>
+</section>
+
+<!-- Seção de Bebidas -->
+<h2 class="section-title">Bebidas</h2>
+<section class="menu-container">
+    <div class="menu-item">
+	<h2>🥤Vitamina</h2>
+        <p>Laranja,banana, abacaxi,morango ou maracujá.</p>
+        <span class="price">R$ 6,50</span>
+    </div>
+	
+	<div class="menu-item">
+	<h2>🍵 Choclate quente </h2>
+        <p> chocolate, leite e açúcar, servida com chantilly .</p>
+        <span class="price">R$ 6,50</span>
+    </div>
+	
+	   <div class="menu-item">
+        <h2>🍹Suco Natural</h2>
+        <p>Laranja, limão, abacaxi ou maracujá.</p>
+        <span class="price">R$ 6,00</span>
+    </div>
+
+    <div class="menu-item">
+        <h2>🧃Refrigerante</h2>
+        <p>Lata 350ml - diversos sabores.</p>
+        <span class="price">R$ 5,00</span>
+    </div>
+
+    <div class="menu-item">
+        <h2>☕Café Espresso</h2>
+        <p>Sabor forte e aroma intenso.</p>
+        <span class="price">R$ 4,00</span>
+    </div> 
+	
+	<div class="menu-item">
+        <h2>🫗Água</h2>
+        <p>Saudavel e refrescante.</p>
+        <span class="price">R$ 2,00</span>
+    </div>
+</section>
+
+</body>
+</html>
